@@ -1,5 +1,5 @@
 <?php
-if($_SERVER['REQUEST_METHOD'] == 'GET' || $_SERVER['REQUEST_METHOD'] == 'POST')
+if($_SERVER['REQUEST_METHOD'] == 'GET')
 {
     if(isset($_GET['route']))
         $action = $_GET['route'];
@@ -8,7 +8,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET' || $_SERVER['REQUEST_METHOD'] == 'POST')
     }
     switch($action){
         case 'register':
-            require('controllers/register-form.php');
+            require('controllers/register.php');
         break;
         case 'login':
             require('controllers/login-form.php');
