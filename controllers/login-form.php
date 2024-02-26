@@ -1,6 +1,7 @@
 <?php
 // Page inaccessible si la personne est connecté
 session_start();
+require_once('C:\laragon\www\examPHP\examphp\inc\functions.php');
 require_once('C:\laragon\www\examPHP\examphp\inc\db.php');
 if(isset($_POST['submit']))
 {
@@ -14,7 +15,9 @@ if(isset($_POST['submit']))
         {
             if(password_verify($_POST['password'], $verif['password']))
             {
-                echo "vous voila connecté";
+                setcookie('email', $verif['email'],(time()+120));
+                setcookie('secure', $verif['password'],(time()+120));
+                $token = creationToken();
             }else
             {
                 echo "Mauvais mot de passe";

@@ -14,15 +14,11 @@ if($_SERVER['REQUEST_METHOD'] == 'GET')
             require('controllers/login.php');
         break;
         case 'upload':
-            require('controllers/upload-form.php');
+            require('controllers/upload.php');
         break;
         
         case 'logout':
             require('controllers/logout.php');
-        break;
-        
-        case 'connected':
-            require('controllers/index.php');
         break;
 
         default:
