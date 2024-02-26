@@ -16,11 +16,11 @@
             <h2>Uploader des fichiers</h2>
             <div id="file-input-container">
                 <label for="files">Choisir un fichier :</label>
-                <input type="file" name="files[]" multiple required>
+                <input type="file" name="files">
             </div>
 
             <button type="button" onclick="addFileInput()">Ajouter un fichier</button>
-            <button type="submit">Upload</button>
+            <button type="submit" name="submit">Upload</button>
         </form>
     </div>
 </body>
