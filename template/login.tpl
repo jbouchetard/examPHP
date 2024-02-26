@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="login-container">
-        <form action="routers/?route=login" method="post">
+        <form action="controllers/login-form.php" method="post">
             <h2>Se connecter</h2>
             <label for="username">Email:</label>
             <input type="email" id="username" name="username" required>
@@ -16,7 +16,7 @@
             <label for="password">Mot de passe:</label>
             <input type="password" id="password" name="password" required>
 
-            <button type="submit">Se connecter</button>
+            <button type="submit" name="submit">Se connecter</button>
             <a href="?route=register" class="button">S'inscrire</a>
         </form>
     </div>
