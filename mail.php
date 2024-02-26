@@ -24,7 +24,7 @@ try {
 
     //Recipients
     $mail->setFrom('from@examPHP.com', 'Mailer');
-    $mail->addAddress($email_exist, 'inscription');     //Add a recipient
+    $mail->addAddress($email_exist);     //Add a recipient
 
 
     //Content

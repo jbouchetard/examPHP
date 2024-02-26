@@ -22,8 +22,7 @@ if(isset($_POST['submit']))
                 password = $password_user");
                 if($sql-> execute())
                 {
-                    echo "envoye";
-                    require_once('C:\laragon\www\examPHP\examphp\mail.php');
+                    require 'C:\laragon\www\examPHP\examphp\mail.php';
                 }else
                 {
                     echo "veuillez reessayer";
