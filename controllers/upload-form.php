@@ -1,5 +1,5 @@
 <?php
-require('C:\laragon\www\examPHP\examphp\inc\db.php');
+require('inc/db.php');
 
 if(isset($_POST['submit']))
 {

@@ -1,7 +1,7 @@
 <?php
 // Page inaccessible si la personne est connecté
 
-require_once('C:\laragon\www\examPHP\examphp\inc\db.php');
+require_once('inc/db.php');
 if(isset($_POST['submit']))
 {
     if(!empty($_POST['username']) && !empty($_POST['password']) && !empty($_POST['confirm-password']) && $_POST['password'] === $_POST['confirm-password'])

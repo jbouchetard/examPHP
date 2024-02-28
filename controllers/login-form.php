@@ -1,8 +1,8 @@
 <?php
 // Page inaccessible si la personne est connecté
 session_start();
-require_once('C:\laragon\www\examPHP\examphp\inc\functions.php');
-require_once('C:\laragon\www\examPHP\examphp\inc\db.php');
+require_once('inc/functions.php');
+require_once('inc/db.php');
 if(isset($_POST['submit']))
 {
     if(!empty($_POST['username']) && !empty($_POST['password']))

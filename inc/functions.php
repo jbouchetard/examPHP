@@ -1,7 +1,7 @@
 
 <?php
 // Vos fonctions (token, traitement des fichiers etc...)
-require_once('C:\laragon\www\examPHP\examphp\controllers\login-form.php');
+require_once('controllers/login-form.php');
 
 function creationToken()
 {
